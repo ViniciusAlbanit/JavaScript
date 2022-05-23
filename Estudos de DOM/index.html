@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de DOM</title>
+    <style>
+        body{
+            background-color: lightgray;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Começando os estudos de DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <div id="msg">Clica em mim</div>
+    <div class="msg2">Outro teste</div>
+    <div class="ms3">Teste 3</div>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <script>
+        var d3 = window.document.querySelector('div.ms3')
+        var corpo = document.body 
+        var p1 = window.document.getElementsByTagName('p')[1] //Basico no plural
+        var d = document.getElementById('msg') //Id
+        var d2 = window.document.querySelector('div.msg2') //selector
+        document.write(`Está escrito assim: ` + p1.innerText)
+        d3.style.color = 'blue'
+        p1.style.color = 'blue'
+        corpo.style.color = 'black'
+        corpo.style.background = 'green'
+        d.style.color = 'pink'
+        d2.style.background = 'blue'
+    </script>
+</body>
+</html>
